@@ -1,7 +1,9 @@
 Data Mining 2024 Assignment 2: Prediction of Protein Expression 
 (by Fayyaz Minhas) 
 Version: 16 Feb 2024 
+
 In this assignment, the objective is to develop regression models for predicting the level of expression of different proteins in a given biological tissue image. You do not need to know any biology for solving this machine learning exercise. Your task is to develop machine learning models that use training data (images with known protein expression values) to predict protein expression in test images. The protein expression of different proteins in a given image patch is called its protein expression profile. 
+
  Data Availability, Format and Reading: 
 The data comes from 4 biological tissue specimens (labelled A1, B1, C1 and D1) and each specimen contains multiple “spots”. Each spot corresponds to a spatial location in a specimen. For each spot, we have an image of that location in the specimen in the form of a png file and the corresponding expression values of 38 different proteins. The total number of spots across all 4 specimens is 9,921. 
 Instructions on how to download the data and view it (along with other helpful hints) are given in the notebook: 
@@ -26,7 +28,7 @@ Using training data, answer the following questions:
 i. Counting Examples: Determine the number of "examples" or spots present in each specimen. [2 marks] 
 ii. Protein Expression Histograms: For each specimen, generate histograms to visualize the expression values of 'NESTIN', 'cMYC', and 'MET' and discuss your observations. [3 marks] 
 iii. Image Pre-processing: Convert a selection of images from RGB to HED color space, focusing on the Hematoxylin channel (H) to highlight cellular nuclei. Provide visual examples and follow the hints in the provided notebook. [5 marks] 
-iv. H-channel Analysis: Calculate the average intensity of the H-channel for each image. Create a scatter plot comparing these averages against the expression levels of NESTIN for each image. Assess the correlation between H-channel intensity and NESTIN expression. Discuss the potential of H-channel average as a predictive feature for NESTIN expression. [4 marks] z=这里要把c1踢掉计算h channel吗？ 因为我是这样的，要改吗？
+iv. H-channel Analysis: Calculate the average intensity of the H-channel for each image. Create a scatter plot comparing these averages against the expression levels of NESTIN for each image. Assess the correlation between H-channel intensity and NESTIN expression. Discuss the potential of H-channel average as a predictive feature for NESTIN expression. [4 marks] 
 v. Performance Metrics for Prediction: Discuss suitable performance metrics for predicting protein expression from images. Identify the most appropriate metric for this specific problem and justify your choice. [3 marks] 
 Question No. 2: (Feature Extraction and Classical Regression) [40 Marks] 
 For the following questions, use the expression of NESTIN as the output prediction target variable. 
